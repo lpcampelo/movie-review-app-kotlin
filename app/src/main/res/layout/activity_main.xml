@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/movieposters"
+        android:scaleType="fitCenter" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardmain"
+        android:layout_width="390dp"
+        android:layout_height="685dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/fadedwhite"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titulomain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/leckerlione_regular"
+                android:paddingTop="15dp"
+                android:paddingLeft="110dp"
+                android:text="@string/moview"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:background="@color/purple_500"/>
+
+            <ImageView
+                android:id="@+id/estrelamain"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="115dp"
+                android:background="@drawable/gold_star"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/boasvindas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulomain"
+                android:background="@color/purple_500"
+                android:fontFamily="@font/lato_bold"
+                android:paddingLeft="25dp"
+                android:paddingTop="15dp"
+                android:text="@string/boas_vindas"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textoultimascriticas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boasvindas"
+                android:background="@color/purple_500"
+                android:fontFamily="@font/lato_bold"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Aqui estão as últimas críticas de filmes:"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <ListView
+                android:layout_below="@+id/textoultimascriticas"
+                android:id="@+id/listFilmes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

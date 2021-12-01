@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/movieposters"
+        android:scaleType="fitCenter" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardlogin"
+        android:layout_width="320dp"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/fadedwhite"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titulologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/campoemail"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/leckerlione_regular"
+                android:text="@string/moview"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+
+            <ImageView
+                android:id="@+id/estrelalogin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignEnd="@+id/campoemail"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/gold_star"
+                android:scaleType="fitCenter" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/campoemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulologin"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="40dp"
+                android:hint="E-mail"
+                android:textColorHint="@color/purple_500">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/purple_500"
+                    android:textColorHint="@color/purple_500" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/camposenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/campoemail"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="30dp"
+                android:hint="Senha"
+                android:textColorHint="@color/purple_500">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/purple_500"
+                    android:textColorHint="@color/purple_500" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/esqueciminhasenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/camposenha"
+                android:layout_alignEnd="@id/camposenha"
+                android:fontFamily="@font/lato_bold"
+                android:text="Esqueci minha senha"
+                android:textColor="@color/purple_500"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/botaologin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/botao_login"
+                android:fontFamily="@font/lato_bold"
+                android:text="Login"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/naopossuiconta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botaologin"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Não possui uma conta?"
+                android:textColor="@color/purple_500"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/criarconta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botaologin"
+                android:layout_alignEnd="@+id/botaologin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Clique aqui para criar!"
+                android:textColor="@color/teal_700"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
