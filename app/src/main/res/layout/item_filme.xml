@@ -33,7 +33,7 @@
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/lato_regular"
                 android:text="Título"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/nota"

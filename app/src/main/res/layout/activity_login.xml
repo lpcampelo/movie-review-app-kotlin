@@ -107,6 +107,7 @@
                 android:background="@drawable/botao_login"
                 android:fontFamily="@font/lato_bold"
                 android:text="Login"
+                android:textAllCaps="false"
                 android:textColor="@color/white" />
 
             <TextView

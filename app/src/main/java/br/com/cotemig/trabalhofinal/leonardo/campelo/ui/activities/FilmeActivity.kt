@@ -21,5 +21,14 @@ class FilmeActivity : AppCompatActivity() {
         var poster = findViewById<ImageView>(R.id.poster)
         poster.load(filme.poster)
 
+        var nota = findViewById<TextView>(R.id.nota)
+        nota.text = filme.nota
+
+        var genero = findViewById<TextView>(R.id.genero)
+        genero.text = filme.genero
+
+        var avaliacao = findViewById<TextView>(R.id.avaliacao)
+        avaliacao.text = filme.avaliacao
+
     }
 }

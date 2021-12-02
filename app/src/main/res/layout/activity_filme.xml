@@ -84,6 +84,42 @@
                 android:textColor="@color/purple_500"
                 android:textSize="15dp" />
 
+            <TextView
+                android:id="@+id/nota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titulo"
+                android:fontFamily="@font/lato_bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/genero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nota"
+                android:fontFamily="@font/lato_bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/avaliacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genero"
+                android:fontFamily="@font/lato_bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="15dp" />
+
         </RelativeLayout>
 
 

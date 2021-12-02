@@ -40,6 +40,12 @@ RecyclerView.Adapter<AdapterFilme.FilmeHolder>() {
 
             var poster = view.findViewById<ImageView>(R.id.poster)
             poster.load(filme.poster)
+
+            var nota = view.findViewById<TextView>(R.id.nota)
+            nota.text = filme.nota
+
+            var genero = view.findViewById<TextView>(R.id.genero)
+            genero.text = filme.genero
         }
     }
 }

@@ -7,6 +7,7 @@ class Filme : Serializable {
     var titulo: String? = null
     var poster: String? = null
     var nota: String? = null
+    var genero: String? = null
     var avaliacao: String? = null
 
 }

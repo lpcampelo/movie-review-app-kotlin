@@ -120,14 +120,15 @@
 
             <Button
                 android:id="@+id/botaocadastrar"
-                android:layout_below="@id/campocadastrosenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_below="@id/campocadastrosenha"
                 android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/botao_login"
                 android:fontFamily="@font/lato_bold"
                 android:text="Cadastrar"
+                android:textAllCaps="false"
                 android:textColor="@color/white" />
 
         </RelativeLayout>

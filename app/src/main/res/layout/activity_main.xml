@@ -100,6 +100,7 @@
                     android:background="@color/darkgreen"
                     android:fontFamily="@font/lato_bold"
                     android:text="Buscar"
+                    android:textAllCaps="false"
                     android:textSize="10dp"
                     android:textColor="@color/white"/>
 
