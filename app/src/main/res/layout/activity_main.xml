@@ -75,8 +75,30 @@
                 android:textColor="@color/white"
                 android:textSize="15dp" />
 
+            <EditText
+                android:id="@+id/campobusca"
+                android:layout_below="@id/textoultimascriticas"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/botaobusca"
+                android:layout_below="@id/textoultimascriticas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/campobusca"
+                android:text="Buscar"/>
+
+            <Button
+                android:id="@+id/botaolimparbusca"
+                android:layout_below="@id/botaobusca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/campobusca"
+                android:text="Limpar"/>
+
             <ListView
-                android:layout_below="@+id/textoultimascriticas"
+                android:layout_below="@+id/campobusca"
                 android:id="@+id/listFilmes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

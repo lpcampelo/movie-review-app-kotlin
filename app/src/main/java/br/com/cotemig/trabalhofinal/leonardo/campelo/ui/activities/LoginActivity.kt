@@ -21,6 +21,7 @@ class LoginActivity : AppCompatActivity() {
         login.setOnClickListener {
             loginClick()
         }
+
     }
 
     fun loginClick() {
