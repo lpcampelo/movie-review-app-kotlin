@@ -7,32 +7,39 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.recyclerview.widget.RecyclerView
 import br.com.cotemig.trabalhofinal.leonardo.campelo.R
 import br.com.cotemig.trabalhofinal.leonardo.campelo.models.Filme
 import coil.load
 
-class AdapterFilme (var context: Context, var list: List<Filme>) : BaseAdapter() {
-    override fun getCount(): Int {
+class AdapterFilme (var context: Context, var list: List<Filme>, var onClick: (Filme) -> Unit):
+RecyclerView.Adapter<AdapterFilme.FilmeHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmeHolder {
+        var view = LayoutInflater.from(context).inflate(R.layout.item_filme, parent, false)
+        return FilmeHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: FilmeHolder, position: Int) {
+        holder.bind(list[position], onClick)
+    }
+
+    override fun getItemCount(): Int {
         return list.size
     }
 
-    override fun getItem(p0: Int): Any {
-        return ""
-    }
+    class FilmeHolder(var view: View) : RecyclerView.ViewHolder(view) {
 
-    override fun getItemId(p0: Int): Long {
-        return 0
-    }
+        fun bind(filme: Filme, onClick: (Filme) -> Unit) {
+            var card = view.findViewById<CardView>(R.id.filmecard)
+            card.setOnClickListener { onClick(filme)}
 
-    override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
-        var view = LayoutInflater.from(context).inflate(R.layout.item_filme, null)
+            var titulo = view.findViewById<TextView>(R.id.titulo)
+            titulo.text = filme.titulo
 
-        var poster = view.findViewById<ImageView>(R.id.poster)
-        poster.load(list[p0].poster)
-
-        var titulo = view.findViewById<TextView>(R.id.titulo)
-        titulo.text = list[p0].titulo
-
-        return view
+            var poster = view.findViewById<ImageView>(R.id.poster)
+            poster.load(filme.poster)
+        }
     }
 }

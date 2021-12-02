@@ -1,8 +1,12 @@
 package br.com.cotemig.trabalhofinal.leonardo.campelo.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.PagerSnapHelper
+import androidx.recyclerview.widget.RecyclerView
 import br.com.cotemig.trabalhofinal.leonardo.campelo.R
 import br.com.cotemig.trabalhofinal.leonardo.campelo.models.Filme
 import br.com.cotemig.trabalhofinal.leonardo.campelo.models.Usuario
@@ -61,8 +65,21 @@ class MainActivity : AppCompatActivity() {
 
     fun mostrarFilmes(list: List<Filme>) {
 
-        var listFilmes = findViewById<ListView>(R.id.listFilmes)
-        listFilmes.adapter = AdapterFilme(this, list)
+        val listFilmes = this.findViewById<RecyclerView>(R.id.listFilmes)
+        listFilmes.adapter = AdapterFilme (this, list) {
+            val intent = Intent(this, FilmeActivity::class.java)
+            intent.putExtra("filme", it)
+            startActivity(intent)
+        }
+
+        listFilmes.layoutManager = LinearLayoutManager (
+            this,
+            LinearLayoutManager.VERTICAL,
+            false
+        )
+
+        val helper = PagerSnapHelper()
+        helper.attachToRecyclerView(listFilmes)
     }
 
     fun buscarClick() {
