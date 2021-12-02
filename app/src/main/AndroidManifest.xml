@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrabalhoFinal">
         <activity
+            android:name=".ui.activities.FilmeActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.activities.SenhaActivity"
             android:exported="true" />
         <activity
@@ -25,10 +28,10 @@
         </activity>
         <activity
             android:name=".ui.activities.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ui.activities.CadastroActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
