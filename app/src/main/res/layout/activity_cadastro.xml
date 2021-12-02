@@ -127,7 +127,7 @@
                 android:layout_marginTop="30dp"
                 android:background="@drawable/botao_login"
                 android:fontFamily="@font/lato_bold"
-                android:text="Cadastrar"
+                android:text="@string/cadastrar"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 

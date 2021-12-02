@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/purple_500"
                 android:fontFamily="@font/leckerlione_regular"
-                android:paddingLeft="110dp"
+                android:paddingLeft="125dp"
                 android:paddingTop="15dp"
                 android:text="@string/moview"
                 android:textColor="@color/white"
@@ -44,7 +44,7 @@
                 android:layout_height="38dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="18dp"
-                android:layout_marginEnd="115dp"
+                android:layout_marginEnd="100dp"
                 android:background="@drawable/gold_star"
                 android:scaleType="fitCenter" />
 
@@ -71,7 +71,7 @@
                 android:paddingLeft="25dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="Navegue entre as críticas disponíveis ou utilize o campo abaixo para buscar críticas específicas!"
+                android:text="@string/orientacoes_main"
                 android:textColor="@color/white"
                 android:textSize="15dp" />
 
@@ -85,9 +85,9 @@
 
                 <EditText
                     android:id="@+id/campobusca"
-                    android:layout_width="240dp"
+                    android:layout_width="250dp"
                     android:layout_height="25dp"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
                     android:background="@color/fadedwhite" />
 
@@ -99,9 +99,9 @@
                     android:layout_toRightOf="@id/campobusca"
                     android:background="@color/darkgreen"
                     android:fontFamily="@font/lato_bold"
-                    android:text="Buscar"
+                    android:text="@string/buscar"
                     android:textAllCaps="false"
-                    android:textSize="10dp"
+                    android:textSize="13dp"
                     android:textColor="@color/white"/>
 
                 <Button
@@ -114,7 +114,7 @@
                     android:layout_toRightOf="@id/campobusca"
                     android:background="@color/transparent"
                     android:fontFamily="@font/lato_bold"
-                    android:text="Limpar Filtros"
+                    android:text="@string/limpar_filtros"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="10dp" />

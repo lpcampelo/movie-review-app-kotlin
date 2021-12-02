@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 class RetrofitInitializer {
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://run.mocky.io/v3/488ef70f-f4b6-49eb-aa9b-020d45db8fef/")
+        .baseUrl("https://run.mocky.io/v3/e5b6c024-3bc3-4607-a1cd-b6c2743b2aa6/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 

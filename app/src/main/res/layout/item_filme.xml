@@ -31,57 +31,52 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="@font/lato_regular"
-                android:text="Título"
-                android:textSize="18dp" />
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="16dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/nota"
+                android:layout_below="@id/titulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/titulo"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="55dp"
-                android:fontFamily="@font/lato_bold"
-                android:paddingTop="25dp"
-                android:text="Nota" />
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/lato_bold"/>
 
             <ImageView
                 android:id="@+id/estrela"
+                android:layout_below="@id/titulo"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:background="@drawable/gold_star"
-                android:layout_marginTop="45dp"
-                android:layout_marginLeft="35dp"/>
+                android:layout_centerVertical="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="46dp"/>
 
             <TextView
                 android:id="@+id/genero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/titulo"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="160dp"
-                android:fontFamily="@font/lato_bold"
-                android:paddingTop="25dp"
-                android:text="Gênero" />
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/lato_bold"/>
 
             <TextView
                 android:id="@+id/detalhes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/nota"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="100dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="+ Detalhes"
+                android:text="@string/detalhes"
                 android:textSize="12dp" />
 
         </RelativeLayout>
 
-
-
     </RelativeLayout>
-
-
 
 </androidx.cardview.widget.CardView>

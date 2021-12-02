@@ -54,7 +54,7 @@
                 android:layout_below="@id/titulologin"
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="40dp"
-                android:hint="E-mail"
+                android:hint="@string/e_mail"
                 android:textColorHint="@color/purple_500">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -74,7 +74,7 @@
                 android:layout_below="@id/campoemail"
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="30dp"
-                android:hint="Senha"
+                android:hint="@string/senha"
                 android:textColorHint="@color/purple_500">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -94,7 +94,7 @@
                 android:layout_below="@+id/camposenha"
                 android:layout_alignEnd="@id/camposenha"
                 android:fontFamily="@font/lato_bold"
-                android:text="Esqueci minha senha"
+                android:text="@string/esqueci_minha_senha"
                 android:textColor="@color/purple_500"
                 android:textSize="12dp" />
 
@@ -106,7 +106,7 @@
                 android:layout_marginTop="400dp"
                 android:background="@drawable/botao_login"
                 android:fontFamily="@font/lato_bold"
-                android:text="Login"
+                android:text="@string/login"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 
@@ -118,7 +118,7 @@
                 android:layout_marginHorizontal="35dp"
                 android:layout_marginTop="12dp"
                 android:fontFamily="@font/lato_bold"
-                android:text="Não possui uma conta?"
+                android:text="@string/nao_possui_uma_conta"
                 android:textColor="@color/purple_500"
                 android:textSize="12dp" />
 
@@ -131,7 +131,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginRight="5dp"
                 android:fontFamily="@font/lato_bold"
-                android:text="Clique aqui para criar!"
+                android:text="@string/clique_aqui_para_criar"
                 android:linksClickable="true"
                 android:textColor="@color/teal_700"
                 android:textSize="12dp" />
