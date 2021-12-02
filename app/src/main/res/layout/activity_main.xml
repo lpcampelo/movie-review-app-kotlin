@@ -26,33 +26,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/titulomain"
+            <RelativeLayout
+                android:id="@+id/cabecalho"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_500"
-                android:fontFamily="@font/leckerlione_regular"
-                android:paddingLeft="125dp"
+                android:layout_centerHorizontal="true"
                 android:paddingTop="15dp"
-                android:text="@string/moview"
-                android:textColor="@color/white"
-                android:textSize="35dp" />
+                android:paddingStart="115dp"
+                android:background="@color/purple_500">
 
-            <ImageView
-                android:id="@+id/estrelamain"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="100dp"
-                android:background="@drawable/gold_star"
-                android:scaleType="fitCenter" />
+                <TextView
+                    android:id="@+id/moview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/leckerlione_regular"
+                    android:text="@string/moview"
+                    android:textColor="@color/white"
+                    android:textSize="35dp"
+                    android:paddingRight="5dp"/>
+
+                <ImageView
+                    android:id="@+id/estrelamain"
+                    android:layout_toRightOf="@id/moview"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/gold_star"
+                    android:scaleType="fitCenter" />
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/boasvindas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/titulomain"
+                android:layout_below="@id/cabecalho"
                 android:background="@color/purple_500"
                 android:fontFamily="@font/lato_bold"
                 android:paddingLeft="25dp"
