@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import br.com.cotemig.trabalhofinal.leonardo.campelo.R
 import br.com.cotemig.trabalhofinal.leonardo.campelo.models.Usuario
@@ -20,6 +21,12 @@ class LoginActivity : AppCompatActivity() {
         var login = findViewById<Button>(R.id.botaologin)
         login.setOnClickListener {
             loginClick()
+        }
+
+        var cadastrar = findViewById<TextView>(R.id.criarconta)
+        cadastrar.setOnClickListener{
+            var intent = Intent(this, CadastroActivity::class.java)
+            startActivity(intent)
         }
 
     }

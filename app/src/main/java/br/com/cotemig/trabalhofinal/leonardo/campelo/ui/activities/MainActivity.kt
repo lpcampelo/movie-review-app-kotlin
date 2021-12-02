@@ -68,18 +68,19 @@ class MainActivity : AppCompatActivity() {
     fun buscarClick() {
 
         var busca = findViewById<EditText>(R.id.campobusca)
-        var resultado = null as Filme?
+        var resultado = null as List<Filme>?
         this.filmes.let { listFilmes ->
-            resultado = listFilmes!!.find { it.titulo.contains(busca.text.toString())}
+            resultado = listFilmes!!.filter { it.titulo.lowercase().contains(busca.text.toString().lowercase())}
+
+            if (resultado!!.isEmpty()) {
+                Toast.makeText(this@MainActivity, "Nenhum resultado encontrado!", Toast.LENGTH_SHORT).show()
+                obterFilmes()
+            }
+            else {
+                mostrarFilmes(resultado!!)
+            }
         }
 
-        if (resultado != null) {
-            var listaFiltrada = arrayListOf<Filme>()
-            listaFiltrada.add(resultado as Filme)
-            mostrarFilmes(listaFiltrada)
-        }
-        else {
-            Toast.makeText(this@MainActivity, "Nenhum resultado encontrado!", Toast.LENGTH_SHORT).show()
-        }
+
     }
 }

@@ -1,9 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.CadastroActivity">
+    tools:context=".ui.activities.LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/movieposters"
+        android:scaleType="fitCenter" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardcadastro"
+        android:layout_width="320dp"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/fadedwhite"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titulocadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/campocadastroemail"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/leckerlione_regular"
+                android:text="@string/moview"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+
+            <ImageView
+                android:id="@+id/estrelacadastro"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignEnd="@+id/campocadastroemail"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/gold_star"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/instrucoescadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulocadastro"
+                android:fontFamily="@font/lato_bold"
+                android:paddingHorizontal="40dp"
+                android:paddingTop="20dp"
+                android:text="@string/instrucoes_cadastro"
+                android:textColor="@color/purple_500"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/campocadastronome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/instrucoescadastro"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="40dp"
+                android:hint="Nome"
+                android:textColorHint="@color/purple_500">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cadastronome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/purple_500"
+                    android:textColorHint="@color/purple_500" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/campocadastroemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/campocadastronome"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="40dp"
+                android:hint="E-mail"
+                android:textColorHint="@color/purple_500">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cadastroemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/purple_500"
+                    android:textColorHint="@color/purple_500" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/campocadastrosenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/campocadastroemail"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="Senha"
+                android:textColorHint="@color/purple_500">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/purple_500"
+                    android:textColorHint="@color/purple_500" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/botaocadastrar"
+                android:layout_below="@id/campocadastrosenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/botao_login"
+                android:fontFamily="@font/lato_bold"
+                android:text="Cadastrar"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

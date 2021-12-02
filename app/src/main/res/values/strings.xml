@@ -2,4 +2,5 @@
     <string name="app_name">TrabalhoFinal</string>
     <string name="boas_vindas">Olá, %s!</string>
     <string name="moview">Moview</string>
+    <string name="instrucoes_cadastro">Informe os dados abaixo para criar um cadastro:</string>
 </resources>

@@ -9,4 +9,7 @@ interface ServiceUsuario {
 
     @POST("account/auth")
     fun auth(@Body usuario: Usuario) : Call<Usuario>
+
+    @POST("account")
+    fun cadastrar(@Body account: Usuario): Call<Usuario>
 }

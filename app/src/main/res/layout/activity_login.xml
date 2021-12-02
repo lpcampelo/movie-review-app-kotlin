@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/botaologin"
                 android:layout_marginHorizontal="35dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="12dp"
                 android:fontFamily="@font/lato_bold"
                 android:text="Não possui uma conta?"
                 android:textColor="@color/purple_500"
@@ -127,10 +127,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/botaologin"
                 android:layout_alignEnd="@+id/botaologin"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginRight="5dp"
                 android:fontFamily="@font/lato_bold"
                 android:text="Clique aqui para criar!"
+                android:linksClickable="true"
                 android:textColor="@color/teal_700"
                 android:textSize="12dp" />
 
