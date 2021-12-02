@@ -4,16 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/drawable-v24/background_foreground.xml" value="0.3435185185185185" />
+        <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3277777777777778" />
+        <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/drawable/borda.xml" value="0.3277777777777778" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/drawable/botao_login.xml" value="0.22135416666666666" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/drawable/button_login.xml" value="0.3648148148148148" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/drawable/ic_botaologin.xml" value="0.3648148148148148" />
+        <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3277777777777778" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/drawable/ic_moview.xml" value="0.3769230769230769" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/layout/activity_cadastro.xml" value="0.25" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/layout/activity_filme.xml" value="0.33" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/layout/activity_senha.xml" value="0.25" />
-        <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/layout/item_filme.xml" value="0.35260416666666666" />
+        <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/layout/borda.xml" value="0.36666666666666664" />
+        <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/layout/item_filme.xml" value="0.33" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/mipmap-anydpi-v26/background.xml" value="0.21875" />
         <entry key="..\:/Arquivos/AndroidStudio/TrabalhoFinal/app/src/main/res/mipmap-anydpi-v26/background_round.xml" value="0.12407407407407407" />
       </map>

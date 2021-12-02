@@ -24,7 +24,8 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
 
             <TextView
                 android:id="@+id/moview"
@@ -42,9 +43,9 @@
                 android:id="@+id/estrela"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
-                android:layout_toRightOf="@id/poster"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="18dp"
+                android:layout_toRightOf="@id/poster"
                 android:background="@drawable/gold_star"
                 android:scaleType="fitCenter" />
 
@@ -69,13 +70,13 @@
                 android:layout_below="@id/descricaoavaliacao"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY" />
 
             <TextView
                 android:id="@+id/titulo"
-                android:layout_below="@+id/poster"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/poster"
                 android:fontFamily="@font/lato_bold"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"

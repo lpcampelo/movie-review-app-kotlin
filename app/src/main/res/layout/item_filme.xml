@@ -1,24 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/filmecard"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
 
-    <ImageView
-        android:id="@+id/poster"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
-        android:scaleType="fitXY"
-        android:layout_marginVertical="20dp"
-        android:layout_marginLeft="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/lato_bold"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@+id/poster"/>
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="50dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/poster"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_regular"
+                android:text="Título"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="55dp"
+                android:fontFamily="@font/lato_bold"
+                android:paddingTop="25dp"
+                android:text="Nota" />
+
+            <ImageView
+                android:id="@+id/estrela"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/gold_star"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="35dp"/>
+
+            <TextView
+                android:id="@+id/genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="160dp"
+                android:fontFamily="@font/lato_bold"
+                android:paddingTop="25dp"
+                android:text="Gênero" />
+
+            <TextView
+                android:id="@+id/detalhes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nota"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginTop="20dp"
+                android:text="+ Detalhes"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
 
 </androidx.cardview.widget.CardView>

@@ -79,6 +79,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         val helper = PagerSnapHelper()
+        listFilmes.setOnFlingListener(null);
         helper.attachToRecyclerView(listFilmes)
     }
 
