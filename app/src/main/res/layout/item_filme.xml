@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/poster"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="15dp">
 
             <TextView
@@ -71,8 +71,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/nota"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
                 android:fontFamily="@font/lato_regular"
-                android:layout_marginTop="20dp"
                 android:text="+ Detalhes"
                 android:textSize="12dp" />
 

@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="fadedwhite">#F7FFFFFF</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="darkgreen">#1F6860</color>
 </resources>
