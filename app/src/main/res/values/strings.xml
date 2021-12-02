@@ -12,7 +12,7 @@
     <string name="login">Login</string>
     <string name="nao_possui_uma_conta">Não possui uma conta?</string>
     <string name="clique_aqui_para_criar">Clique aqui para criar!</string>
-    <string name="orientacoes_main">Navegue entre as críticas disponíveis ou utilize o campo abaixo para buscar críticas específicas!</string>
+    <string name="orientacoes_main">Navegue entre as avaliações disponíveis ou busque pela que deseja usando o nome do filme!</string>
     <string name="buscar">Buscar</string>
     <string name="limpar_filtros">Limpar Filtros</string>
     <string name="recuperar_senha">Recuperar Senha</string>
