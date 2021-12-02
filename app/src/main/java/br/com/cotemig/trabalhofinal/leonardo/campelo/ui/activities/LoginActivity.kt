@@ -29,6 +29,12 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        var recuperarSenha = findViewById<TextView>(R.id.esqueciminhasenha)
+        recuperarSenha.setOnClickListener{
+            var intent = Intent(this, SenhaActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     fun loginClick() {

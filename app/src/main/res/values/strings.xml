@@ -3,4 +3,5 @@
     <string name="boas_vindas">Olá, %s!</string>
     <string name="moview">Moview</string>
     <string name="instrucoes_cadastro">Informe os dados abaixo para criar um cadastro:</string>
+    <string name="instrucoes_recuperar_senha">Informe o e-mail cadastrado e enviaremos um link para recuperação da senha:</string>
 </resources>

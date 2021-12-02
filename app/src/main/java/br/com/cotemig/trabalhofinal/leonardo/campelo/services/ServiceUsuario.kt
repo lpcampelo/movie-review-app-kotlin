@@ -12,4 +12,7 @@ interface ServiceUsuario {
 
     @POST("account")
     fun cadastrar(@Body account: Usuario): Call<Usuario>
+
+    @POST("account")
+    fun recuperarSenha (@Body account: Usuario): Call<Usuario>
 }
